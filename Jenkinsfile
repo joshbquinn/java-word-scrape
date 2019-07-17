@@ -23,7 +23,7 @@ node {
     }
 }
 
-def notfiy(status){
+def notify(status){
     emailtext(
             to: "jbqjenkins@gmail.com",
             subject: "${status}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
