@@ -12,8 +12,7 @@ public class Driver {
 
 
         /*Create inclusion and exclusion words if they don't exist*/
-        if(!fileManager.checkFileExists(fileManager.getTargetPath()+ "exclusions.txt")
-                || wordManager.getExclusions() ==null)
+        if(wordManager.getExclusions() == null || !fileManager.checkFileExists(fileManager.getTargetPath()+ "exclusions.txt"))
         {
             wordManager.setExclusions(
                     wordManager.stringToList(
@@ -23,8 +22,7 @@ public class Driver {
 
         }
 
-        if(!fileManager.checkFileExists(fileManager.getTargetPath()+"inclusions.txt") ||
-                wordManager.getInclusions() == null) {
+        if(wordManager.getInclusions() == null || !fileManager.checkFileExists(fileManager.getTargetPath()+"inclusions.txt")) {
             wordManager.setInclusions(
                     wordManager.stringToList(
                             wordFetcher.wordFetch(
@@ -79,16 +77,16 @@ public class Driver {
 
 
         /*Console test to see if correct words are printed*/
-        for(String s: wordManager.getScraped()){
-            System.out.println(s);
-        }
+//        for(String s: wordManager.getScraped()){
+//            System.out.println(s);
+//        }
 
 
 
 
 
         /*Write list to file*/
-        String cleanURL =  urlCleaner.removeIllegalDirChars(url).replace(" ", "-");
+        String cleanURL =  urlCleaner.removeIllegalDirChars(url).replace(" ", "_");
         wordManager.getScraped().add(0, cleanURL);
         fileManager.writeToFile(wordManager.getScraped(), cleanURL + fileManager.timeStamper() + "-word-scrape.txt");
 
