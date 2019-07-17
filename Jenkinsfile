@@ -2,17 +2,17 @@ node {
     notify('CI')
     try {
         stage('Source Control Checkout') {
-            cehckout scm
+            checkout scm
         }
 
         stage('Test'){
-            sh mvn
+            sh 'mvn test'
         }
 
-        stage('package') {
+        stage('Package') {
             sh 'mvn clean package'
         }
-        stage('archive') {
+        stage('Archive') {
             archiveArtifacts allowEmptyArchive: true, artifacts: '*.txt'
             archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.jar'
         }
