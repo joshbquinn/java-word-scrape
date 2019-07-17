@@ -24,7 +24,7 @@ node {
 }
 
 def notify(status){
-    emailtext(
+    emailext(
             to: "jbqjenkins@gmail.com",
             subject: "${status}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
             body:"""<p>${status}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p>
