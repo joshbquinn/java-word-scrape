@@ -1,10 +1,6 @@
-node {
-        
-            docker {
-                image 'maven:3-alpine',
-                        args '-v /root/.m2:/root/.m2'
-            }
-
+pipeline {
+    agent any
+    stages {
         stage('Git') {
             checkout scm
         }
@@ -33,6 +29,7 @@ node {
 
 
     }
+}
 
 def notify(status){
     emailext(
