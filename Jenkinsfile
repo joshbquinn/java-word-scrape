@@ -10,7 +10,7 @@ node {
 
 
         stage('Archival') {
-            publishHTML([allowMissing         : true,
+            publishHTML(target: [allowMissing         : true,
                          alwaysLinkToLastBuild: false,
                          keepAll              : true,
                          reportDir            : 'target/site/jacoco',
@@ -20,7 +20,6 @@ node {
             archiveArtifacts allowEmptyArchive: true, artifacts: '*.txt'
             archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.jar'
         }
-
 
     } catch (err){
         notify("Error ${err}")
