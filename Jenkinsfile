@@ -1,31 +1,31 @@
 node {
-    stage('SCM'){
-        checkout scm
-    }
-
-    stage('Build') {
-        sh 'mvn clean package'
-    }
-
-    stage('Test') {
-        sh 'mvn test'
-    }
-
-    stage('Code Coverage') {
-        sh 'mvn verify'
-        post {
-            always {
-                junit 'build/reports/**/*.xml'
-            }
+    try {
+        stage('Git Checkout') {
+            checkout scm
         }
+
+        stage('Build - Compile, Test, Package') {
+            sh 'mvn clean verify'
+        }
+
+
+        stage('Archival') {
+            publishHTML([allowMissing         : true,
+                         alwaysLinkToLastBuild: false,
+                         keepAll              : true,
+                         reportDir            : 'target/site/jacoco',
+                         reportFiles          : 'index.html',
+                         reportName           : 'Code Coverage',
+                         reportTitles         : ''])
+            archiveArtifacts allowEmptyArchive: true, artifacts: '*.txt'
+            archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.jar'
+        }
+
+
+    } catch (err){
+        notify("Error ${err}")
+        currentBuild.result = 'Failure'
     }
-
-    stage('Archive') {
-        archiveArtifacts allowEmptyArchive: true, artifacts: '*.txt'
-        archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.jar'
-    }
-
-
 }
 
 def notify(status){
