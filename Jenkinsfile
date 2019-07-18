@@ -11,18 +11,18 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
-    }
 
-    
         stage('Archive') {
-            archiveArtifacts allowEmptyArchive: true, artifacts: '*.txt'
-            archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.jar'
+            steps {
+
+                archiveArtifacts allowEmptyArchive: true, artifacts: '*.txt'
+                archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.jar'
+            }
         }
 
 
-
+    }
 }
-
 def notify(status){
     emailext(
             to: "jbqjenkins@gmail.com",
