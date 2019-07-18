@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Driver.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">word-scraper</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Driver.java</span></div><h1>Driver.java</h1><pre class="source lang-java linenums">import java.net.URL;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+<span class="nc" id="L6">public class Driver {</span>
+
+    public static void main(String[] args) throws Exception {
+
+<span class="nc" id="L10">        WordManager wordManager = new WordManager();</span>
+<span class="nc" id="L11">        WordFetcher wordFetcher = new WordFetcher();</span>
+<span class="nc" id="L12">        UrlCleaner urlCleaner = new UrlCleaner();</span>
+<span class="nc" id="L13">        FileManager fileManager = new FileManager();</span>
+
+<span class="nc" id="L15">        String targetPath = fileManager.getTargetPath();</span>
+
+
+
+        // Create exclusion word list if doesn't exist
+<span class="nc bnc" id="L20" title="All 2 branches missed.">        if(wordManager.getExclusions() == null) {</span>
+
+<span class="nc bnc" id="L22" title="All 2 branches missed.">            if (fileManager.checkFileExists(&quot;exclusions.txt&quot;)) {</span>
+<span class="nc" id="L23">                List&lt;String&gt; exclusionList = fileManager.readFromFile(&quot;exclusions.txt&quot;);</span>
+<span class="nc" id="L24">                wordManager.setExclusions(exclusionList);</span>
+<span class="nc" id="L25">            }</span>
+        else {
+<span class="nc" id="L27">                URL exclusionURL = new URL(&quot;https://www.scrapmaker.com/data/wordlists/language/Transitionalwords(72).txt&quot;);</span>
+<span class="nc" id="L28">                String exclusionString = wordFetcher.wordFetch(exclusionURL);</span>
+<span class="nc" id="L29">                List&lt;String&gt; exclusionList = wordManager.stringToList(exclusionString);</span>
+<span class="nc" id="L30">                wordManager.setExclusions(exclusionList);</span>
+<span class="nc" id="L31">                fileManager.writeListToFile(wordManager.getExclusions(), &quot;exclusions.txt&quot;);</span>
+            }
+        }
+
+        // Create verb list if they doesn't exist
+<span class="nc bnc" id="L36" title="All 2 branches missed.">        if(wordManager.getVerbs() == null) {</span>
+
+<span class="nc bnc" id="L38" title="All 2 branches missed.">            if (fileManager.checkFileExists(&quot;verbs.txt&quot;)) {</span>
+<span class="nc" id="L39">                List&lt;String&gt; verbList = fileManager.readFromFile(&quot;verbs.txt&quot;);</span>
+<span class="nc" id="L40">                wordManager.setVerbs(verbList);</span>
+<span class="nc" id="L41">            }</span>
+            else {
+<span class="nc" id="L43">                URL verbURL = new URL(&quot;https://www.scrapmaker.com/data/wordlists/language/Verbs(4,874).txt&quot;);</span>
+<span class="nc" id="L44">                String verbString = wordFetcher.wordFetch(verbURL);</span>
+<span class="nc" id="L45">                List&lt;String&gt; verbList = wordManager.stringToList(verbString);</span>
+<span class="nc" id="L46">                wordManager.setVerbs(verbList);</span>
+<span class="nc" id="L47">                fileManager.writeListToFile(wordManager.getVerbs(),&quot;verbs.txt&quot;);</span>
+            }
+        }
+
+//        if(wordManager.getInclusions() == null || !fileManager.checkFileExists(targetPath +&quot;inclusions.txt&quot;)) {
+//            wordManager.setInclusions(
+//                    wordManager.stringToList(
+//                            wordFetcher.wordFetch(
+//                                    wordFetcher.stringToUrl(&quot;https://www.scrapmaker.com/data/wordlists/language/Nouns(5,449).txt&quot;))));
+//            wordManager.appendInclusions(
+//                    wordManager.stringToList(
+//                            wordFetcher.wordFetch(
+//                                    wordFetcher.stringToUrl(&quot;https://www.scrapmaker.com/data/wordlists/language/Verbs(4,874).txt&quot;))));
+//
+//            fileManager.writeListToFile(wordManager.getInclusions(), &quot;inclusions.txt&quot;);
+//        }
+
+
+        //Specify URL from cli and Fetch all string contents from the source
+        //Return a string from the URL source
+<span class="nc" id="L67">        String url = &quot;https://www.rte.ie/news/2019/0718/1063666-lisa-smith/&quot;;</span>
+<span class="nc" id="L68">        String webContentsString = wordFetcher.wordFetch(new URL(url));</span>
+
+        // Clean the string and keep key elements i.e paragraphs
+<span class="nc" id="L71">        String paras = urlCleaner.keepParagraphContent(webContentsString);</span>
+
+        // Remove all unwanted HTML
+        // Create a list from the remaining string
+        // set Scraped word list
+<span class="nc" id="L76">        wordManager.setScraped(wordManager.stringToList(urlCleaner.removeUnwantedHTML(paras)));</span>
+
+        // Get the scraped word list
+        // Remove four letter words from scraped list
+        // Remove exclusion words from scraped list and internally reset scraped word list
+<span class="nc" id="L81">        wordManager.removeExclusionWords(wordManager.removeFourLetterWords(wordManager.getScraped()));</span>
+
+        // Return a Map from the scraped words that collects the word frequency
+<span class="nc" id="L84">        Map&lt;String, Integer&gt; keyWords = wordManager.wordFrequency(wordManager.getScraped());</span>
+
+        // Return a sorted LinkedHasMap of descending values from the keyWords Map
+<span class="nc" id="L87">        LinkedHashMap sortKeyWords = wordManager.sortMapDescending(keyWords);</span>
+
+        // At first element add the url i.e. the original URL source
+<span class="nc" id="L90">        wordManager.getScraped().add(0, url);</span>
+        // Remove illegal characters from the URL string so it can be legally saved as a file name.
+<span class="nc" id="L92">        String cleanURL =  urlCleaner.removeIllegalDirChars(url).replace(&quot; &quot;, &quot;_&quot;);</span>
+        // Write the list to a file and save file with a unique name (cleaned URL string + time stamp)
+<span class="nc" id="L94">        fileManager.writeListToFile(wordManager.getScraped(), cleanURL + fileManager.timeStamper() + &quot;-word-scrape.txt&quot;);</span>
+
+<span class="nc" id="L96">        fileManager.writeMapToFile(sortKeyWords, &quot;SiteKeyWords.txt&quot;);</span>
+<span class="nc" id="L97">    }</span>
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>
