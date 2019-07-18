@@ -7,17 +7,24 @@ node {
         sh 'mvn clean package'
     }
 
-    stage('Test')
+    stage('Test') {
+        sh 'mvn test'
+    }
+
+    stage('Code Coverage') {
+        sh 'mvn verify'
+        post {
+            always {
+                junit 'build/reports/**/*.xml'
+            }
+        }
+    }
 
     stage('Archive') {
         archiveArtifacts allowEmptyArchive: true, artifacts: '*.txt'
         archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.jar'
     }
-    post {
-        always {
-            junit 'build/reports/**/*.xml'
-        }
-    }
+
 
 }
 
