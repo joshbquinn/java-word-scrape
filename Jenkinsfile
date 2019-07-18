@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    stages {
+
         stage('Git') {
             checkout scm
         }
@@ -28,7 +28,7 @@ pipeline {
         }
 
 
-    }
+    
 }
 
 def notify(status){
