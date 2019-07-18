@@ -1,5 +1,4 @@
 node {
-    try {
         agent {
             docker {
                 image 'maven:3-alpine',
@@ -33,11 +32,8 @@ node {
         }
 
 
-    } catch (err) {
-        notify("Error ${err}")
-        currentBuild.result = 'Failure'
     }
-}
+
 def notify(status){
     emailext(
             to: "jbqjenkins@gmail.com",
