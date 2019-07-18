@@ -2,8 +2,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -12,9 +10,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FileManagerTest {
 
-    private FileManager fm = new FileManager();
-    private List<String> tempList = new ArrayList<>(Arrays.asList("Test", "List", "Here"));
-    private File temp = new File("newTempFile.txt");
+    FileManager fm = new FileManager();
+    List<String> tempList = new ArrayList<>(Arrays.asList("Test", "List", "Here"));
+    File temp = new File("newTempFile.txt");
 
 
     @Test
@@ -25,7 +23,7 @@ class FileManagerTest {
 
     @Test
     void checkFileDoesExistTest() {
-        fm.writeToFile(tempList,"existsFile.txt" );
+        fm.writeListToFile(tempList,"existsFile.txt" );
         boolean b = fm.checkFileExists("existsFile.txt");
         assertTrue(b, "This method should return true if the File does exist");
 
@@ -33,7 +31,7 @@ class FileManagerTest {
 
     @Test
     void checkListIsWrittenToFileTest() {
-        fm.writeToFile(tempList, "anotherTempFile.txt");
+        fm.writeListToFile(tempList, "anotherTempFile.txt");
         assertTrue(fm.checkFileExists("anotherTempFile.txt"),
                 "This method should return true if the File does exist");
     }
@@ -52,7 +50,9 @@ class FileManagerTest {
         tempList = null;
         assertNull(tempList);
 
-
-
+        temp.delete();
+        File f1 = new File("existsFile.txt"); f1.delete();
+        File f2 = new File("anotherTempFile.txt"); f2.delete();
+        File f3 = new File("newTempFile.txt"); f3.delete();
     }
 }

@@ -10,12 +10,12 @@ import static org.junit.jupiter.api.Assertions.assertLinesMatch;
 
 class WordManagerTest {
 
-    private WordManager wm = new WordManager();
-    private String[] words = {"Check","in", "this","list", "for", "four", "less", "than", "four", "letter", "words"};
+    WordManager wm = new WordManager();
+    String[] words = {"Check","in", "this","list", "for", "four", "less", "than", "four", "letter", "words"};
 
     @BeforeEach
     void setUp(){
-        wm.setInclusions(wm.stringToList("Check this string too"));
+        wm.setVerbs(wm.stringToList("Check this string too"));
         wm.setExclusions(wm.stringToList("Check this string"));
     }
 
@@ -26,15 +26,15 @@ class WordManagerTest {
         List<String> before = wm.getExclusions();
         wm.appendExclusions(testList);
         List<String> after = wm.getExclusions();
-        assertTrue(after.size() == before.size());
+        assertEquals(after.size(), before.size());
     }
 
     @Test
     void appendInclusionsTest() {
         List<String> testList = new ArrayList<>(Arrays.asList("Check","this","string", "for", "four", "less", "than", "four", "letter", "words"));
-        List<String> before = wm.getInclusions();
+        List<String> before = wm.getVerbs();
         wm.appendInclusions(testList);
-        List<String> after = wm.getInclusions();
+        List<String> after = wm.getVerbs();
         assertTrue(after.size() == before.size());
     }
 

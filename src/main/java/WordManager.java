@@ -1,38 +1,32 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class WordManager {
 
-    private List<String> inclusions;
+    private List<String> verbs;
     private List<String> exclusions;
     private List<String> scraped;
+    private List<String> keywords;
 
     WordManager(){
 
     }
 
-
-    public void setInclusions(List<String> inclusions) {
-        this.inclusions = inclusions;
+    public void setVerbs(List<String> inclusions) {
+        this.verbs = inclusions;
     }
-
     public void setExclusions(List<String> exclusions) {
         this.exclusions = exclusions;
     }
-
     public void setScraped(List<String> scraped) {
         this.scraped = scraped;
     }
 
-    public List<String> getInclusions() {
-        return inclusions;
+    public List<String> getVerbs() {
+        return verbs;
     }
-
     public List<String> getExclusions() {
         return exclusions;
     }
-
     public List<String> getScraped() {
         return scraped;
     }
@@ -40,19 +34,14 @@ public class WordManager {
     public void appendExclusions(List<String> moreExclusions){
         this.exclusions.addAll(moreExclusions);
     }
-
     public void appendInclusions(List<String> moreInclusions){
-        this.inclusions.addAll(moreInclusions);
+        this.verbs.addAll(moreInclusions);
     }
 
-    public List<String> removeDuplicateWords(List<String> webPageWords){
-        return null;
-    }
 
-    //Method to create a string from  - should probably make this into a interface
+
     public List<String> stringToList(String webPageContents) {
         return new ArrayList<>(Arrays.asList(webPageContents.split(" ")));
-
     }
 
     public List<String> removeFourLetterWords(List<String> words){
@@ -72,6 +61,31 @@ public class WordManager {
 
     }
 
+    public Map<String, Integer> wordFrequency(List<String> words){
+        if(words != null){
+            Map<String, Integer> frequencyMap = new HashMap<>();
+            for(String s : words){
+                Integer count = frequencyMap.get(s);
+                if(count == null)
+                    count = 0;
 
+                frequencyMap.put(s, count+1);
+
+            }
+            return frequencyMap;
+        }
+        System.out.println("Word list empty!");
+        return null;
+    }
+
+   public LinkedHashMap<String, Integer> sortMapDescending(Map<String, Integer> unsortedMap) {
+       LinkedHashMap<String, Integer> sorted = new LinkedHashMap<>();
+       unsortedMap.entrySet()
+               .stream()
+               .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+               .forEachOrdered(x -> sorted.put(x.getKey(), x.getValue()));
+
+       return sorted;
+    }
 
 }

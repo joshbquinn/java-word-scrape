@@ -1,3 +1,5 @@
+import org.omg.CORBA.DATA_CONVERSION;
+
 import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
@@ -6,53 +8,37 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 
 public class FileManager  {
 
-    private final String DIR;
     private String targetPath;
     private String newDirPath;
 
 
     public FileManager() {
-        this.DIR = FileManager.class.getProtectionDomain().getCodeSource().getLocation().getPath();
-        this.targetPath = DIR;
-        this.newDirPath = targetPath;
-    }
-
-
-    public String getDIR() {
-        return DIR;
+        this.targetPath = FileManager.class.getProtectionDomain().getCodeSource().getLocation().getPath();
     }
 
     public String getTargetPath() {
         return targetPath;
     }
 
-    public void setTargetPath(String targetPATH) {
-        this.targetPath = targetPATH;
+    public String getNewDirPath() {
+        return newDirPath;
     }
 
-    public void setNewDirPath(String newDirPath) {
-        this.newDirPath = newDirPath;
+    public void setNewDirPath(String dirPath){
+        this.newDirPath = dirPath;
     }
 
     public synchronized boolean checkFileExists(String path) {
-        File tempDir = new File(getTargetPath() + path);
-
-        if (tempDir.exists()){
-            return true;
-        }
-        else {
-            return false;
-        }
+        File tempDir = new File(path);
+        return tempDir.exists();
     }
 
-
-    public synchronized void writeToFile(List<String> list, String file) {
+    public synchronized void writeListToFile(List<String> list, String file) {
         String path = FileManager.class.getProtectionDomain().getCodeSource().getLocation().getPath();
         try {
             Path out = Paths.get(file);
@@ -62,10 +48,17 @@ public class FileManager  {
         }
     }
 
+    public synchronized void writeMapToFile(LinkedHashMap<String, Integer> frequencyMap, String file) throws IOException{
+        String path = FileManager.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+        Path out = Paths.get(file);
+        Files.write(out, () -> frequencyMap.entrySet().stream()
+                .<CharSequence>map(e -> e.getKey() + " : "+  e.getValue() + " Occurrences")
+                .iterator());
+    }
 
 
-    public synchronized List<String> readFromFile(String path) {
-        List<String> wordList = null;
+    public synchronized List<String> readFromFile(String path) throws NullPointerException {
+        List<String> wordList = new ArrayList<>();
         try {
             BufferedReader buffer = new BufferedReader(new FileReader(path));
             String line = buffer.readLine();
@@ -90,9 +83,8 @@ public class FileManager  {
 
     }
 
-
-    public synchronized void makeDirectory(String path) throws Exception {
-        File f = new File(getTargetPath()+ path);
+    public synchronized void makeDirectory(String dir) throws Exception {
+        File f = new File(getTargetPath()+ dir);
         if(!f.exists()){
             if(f.mkdir()){
                 setNewDirPath(f.getPath());
@@ -108,6 +100,8 @@ public class FileManager  {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd.H.m.s");
         return format.format(new Date());
     }
+
+
 
 }
 

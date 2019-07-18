@@ -45,7 +45,4 @@ public class WordFetcher {
         return null;
     }
 
-    public URL stringToUrl(String urlString) throws Exception {
-        return new URL(urlString);
-    }
 }

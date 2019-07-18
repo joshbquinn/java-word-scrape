@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 @DisplayName("Word Fetcher Test")
 class WordFetcherTest {
 
-    private WordFetcher wordFetcher = new WordFetcher();
-    private String stringUrl = "https://www.rte.ie/news";
+    WordFetcher wordFetcher = new WordFetcher();
+    String stringUrl = "https://www.rte.ie/news";
 
 
     @BeforeEach
@@ -25,7 +25,7 @@ class WordFetcherTest {
 
     @Test
     void checkStringIsConvertedToURLTest() throws Exception {
-        URL url = wordFetcher.stringToUrl(stringUrl);
+        URL url = new URL(stringUrl);
         assertNotNull(url, "The Object Should not be null and should contain a url");
     }
 
