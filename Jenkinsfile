@@ -1,28 +1,23 @@
 node {
-    stages {
-        stage('SCM'){
-            steps{
-                checkout scm
-            }
-        }
 
-        stage('Build') {
-            steps {
-                sh 'mvn clean package'
-            }
-        }
+    stage('SCM'){
+        checkout scm
+    }
 
-        stage('Archive') {
-            steps {
+    stage('Build') {
+        sh 'mvn clean package'
+    }
 
-                archiveArtifacts allowEmptyArchive: true, artifacts: '*.txt'
-                archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.jar'
-            }
-        }
+    stage('Test')
 
+    stage('Archive') {
+
+        archiveArtifacts allowEmptyArchive: true, artifacts: '*.txt'
+        archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.jar'
 
     }
 }
+
 def notify(status){
     emailext(
             to: "jbqjenkins@gmail.com",
