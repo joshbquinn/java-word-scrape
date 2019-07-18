@@ -1,5 +1,4 @@
 node {
-
     stage('SCM'){
         checkout scm
     }
@@ -11,11 +10,15 @@ node {
     stage('Test')
 
     stage('Archive') {
-
         archiveArtifacts allowEmptyArchive: true, artifacts: '*.txt'
         archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.jar'
-
     }
+    post {
+        always {
+            junit 'build/reports/**/*.xml'
+        }
+    }
+
 }
 
 def notify(status){
