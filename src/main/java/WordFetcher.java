@@ -8,18 +8,9 @@ import java.net.URL;
 
 public class WordFetcher {
 
-    private URL url;
 
-    WordFetcher(){
+    public WordFetcher(){
 
-    }
-
-    public URL getUrl() {
-        return url;
-    }
-
-    public void setUrl(URL url) {
-        this.url = url;
     }
 
     public synchronized String wordFetch(URL url) {
@@ -36,7 +27,7 @@ public class WordFetcher {
 
             in.close();
 
-            return sb.toString();
+            return sb.toString().toLowerCase();
 
         } catch(IOException e){
             System.out.println("Error: " + e);

@@ -9,6 +9,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.regex.Pattern;
 
 
 public class FileManager  {
@@ -33,6 +34,8 @@ public class FileManager  {
         this.newDirPath = dirPath;
     }
 
+
+
     public synchronized boolean checkFileExists(String path) {
         File tempDir = new File(path);
         return tempDir.exists();
@@ -48,14 +51,13 @@ public class FileManager  {
         }
     }
 
-    public synchronized void writeMapToFile(LinkedHashMap<String, Integer> frequencyMap, String file) throws IOException{
+    public synchronized void writeMapToFile(LinkedHashMap<String, Integer> frequencyMap, String file) throws Exception{
         String path = FileManager.class.getProtectionDomain().getCodeSource().getLocation().getPath();
         Path out = Paths.get(file);
         Files.write(out, () -> frequencyMap.entrySet().stream()
                 .<CharSequence>map(e -> e.getKey() + " : "+  e.getValue() + " Occurrences")
                 .iterator());
     }
-
 
     public synchronized List<String> readFromFile(String path) throws NullPointerException {
         List<String> wordList = new ArrayList<>();
@@ -76,8 +78,6 @@ public class FileManager  {
         }
         return wordList;
     }
-
-
 
     public synchronized void moveFiles(String fromPath, String toPath){
 
@@ -101,7 +101,10 @@ public class FileManager  {
         return format.format(new Date());
     }
 
-
+    public String removeIllegalDirChars(String urlString){
+        urlString = Pattern.compile("[^A-Za-z0-9]+").matcher(urlString).replaceAll(" ");
+        return urlString;
+    }
 
 }
 

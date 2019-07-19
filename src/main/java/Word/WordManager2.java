@@ -8,7 +8,7 @@ public class WordManager2 {
 
    private Word words;
 
-    WordManager2(){
+    public WordManager2(){
 
     }
 
@@ -17,12 +17,11 @@ public class WordManager2 {
         return null;
     }
 
-
-    //Method to create a string from  - should probably make this into a interface
     public List<String> stringToList(String webPageContents) {
         return new ArrayList<>(Arrays.asList(webPageContents.split(" ")));
 
-    }
+    } //Method to create a string from  - should probably make this into a interface
+
     public List<String> removeFourLetterWords(List<String> words){
         words.removeIf(a -> (a.length() <= 4));
         return words;

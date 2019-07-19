@@ -1,7 +1,7 @@
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class UrlCleaner {
+public class PageContentCleaner {
 
     private Pattern para;
     private Pattern html;
@@ -13,7 +13,7 @@ public class UrlCleaner {
     private Pattern allTags;
     private Pattern numbers;
 
-    UrlCleaner(){
+    public PageContentCleaner(){
 
         this.para = Pattern.compile("<p.*?>(.*?)</p>");
         this.html = Pattern.compile("<a\\b[^>]*href=\"[^>]*>(.*?)</a>");
@@ -37,10 +37,7 @@ public class UrlCleaner {
         return webPageContents;
     }
 
-    public String removeIllegalDirChars(String urlString){
-        urlString = specials.matcher(urlString).replaceAll(" ");
-        return urlString;
-    }
+
 
     public String keepParagraphContent(String webPageContents){
         StringBuilder sb = new StringBuilder();

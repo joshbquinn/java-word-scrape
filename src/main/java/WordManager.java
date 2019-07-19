@@ -5,7 +5,7 @@ public class WordManager {
     private List<String> verbs;
     private List<String> exclusions;
     private List<String> scraped;
-    private List<String> keywords;
+    private LinkedHashMap<String, Integer> keywords;
 
     WordManager(){
 
@@ -20,6 +20,9 @@ public class WordManager {
     public void setScraped(List<String> scraped) {
         this.scraped = scraped;
     }
+    public void setKeywords(LinkedHashMap<String, Integer> keywords){
+        this.keywords = keywords;
+    }
 
     public List<String> getVerbs() {
         return verbs;
@@ -30,6 +33,10 @@ public class WordManager {
     public List<String> getScraped() {
         return scraped;
     }
+    public LinkedHashMap<String, Integer> getKeywords() {
+        return keywords;
+    }
+
 
     public void appendExclusions(List<String> moreExclusions){
         this.exclusions.addAll(moreExclusions);
@@ -45,7 +52,7 @@ public class WordManager {
     }
 
     public List<String> removeFourLetterWords(List<String> words){
-        words.removeIf(a -> (a.length() <= 4));
+        words.removeIf(a -> (a.length() < 4));
         return words;
     }
 
@@ -62,23 +69,29 @@ public class WordManager {
     }
 
     public Map<String, Integer> wordFrequency(List<String> words){
-        if(words != null){
+        if(words != null) {
             Map<String, Integer> frequencyMap = new HashMap<>();
-            for(String s : words){
-                Integer count = frequencyMap.get(s);
+            for (String s : words) {
+                if (!frequencyMap.containsKey(s)) {
+/*                Integer count = frequencyMap.get(s);
                 if(count == null)
-                    count = 0;
+                    count = 0;*/
+                    frequencyMap.put(s, 1);
+                } else {
 
-                frequencyMap.put(s, count+1);
+                    frequencyMap.put(s, frequencyMap.get(s) + 1);
+
+                }
 
             }
             return frequencyMap;
+
         }
         System.out.println("Word list empty!");
         return null;
     }
 
-   public LinkedHashMap<String, Integer> sortMapDescending(Map<String, Integer> unsortedMap) {
+    public LinkedHashMap<String, Integer> sortMapDescending(final Map<String, Integer> unsortedMap) {
        LinkedHashMap<String, Integer> sorted = new LinkedHashMap<>();
        unsortedMap.entrySet()
                .stream()
