@@ -21,10 +21,10 @@ class WordFetcherTest {
     void wordFetchReturnsAStringTest() throws  Exception {
         String webContents = wordFetcher.wordFetch(new URL(stringUrl));
         assertNotNull(webContents, "The Object should contain a string of all of a URL's contents");
-        tearDown();
+
     }
 
-    @AfterAll
+    @AfterEach
     void tearDown(){
         wordFetcher = null;
         assertNull(wordFetcher);
