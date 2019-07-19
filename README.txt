@@ -15,14 +15,14 @@ WordManager
 - test words greater than 4 are not removed from removeFourLetterWords()
 - assert that inclusion words are not removed
 
-UrlCleaner
+PageContentCleaner
 - assert a string is returned from removeUnwantedHTML()
 - assert a string is returned from removeIllegalCharacters()
 - assert a string is returned from keepParagraphContent()
 - assert a string is returned from keepHTagContent()
 
 
-Driver()
+WordScraperApplication()
 - create text files
 - assert path exists
 - assert webContent String created

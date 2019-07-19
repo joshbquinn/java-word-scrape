@@ -2,12 +2,87 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/main/java/FileManager.java" line="89" mnemonic="9" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/Driver.java" line="61" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e2654ea-02a1-4ce7-9928-181e4bdcd825" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WordFetcherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WordFetcherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FileManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UrlCleaner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Word/ExclusionWord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Word/InclusionWord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Word/ScrapedWord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Word/Word.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Word/WordManager2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WordFetcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WordManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Word/ExclusionWord.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Word/ExclusionWord.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Word/InclusionWord.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Word/InclusionWord.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Word/ScrapedWord.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Word/ScrapedWord.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Word/Word.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Word/Word.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Word/WordManager2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Word/WordManager2.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Word/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/Word/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/Driver.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/Driver.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/FileManager.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/FileManager.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/UrlCleaner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/UrlCleaner.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/WordFetcher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/WordFetcher.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/WordManager.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/WordManager.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/default/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchfc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchnc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchpc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/bundle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/class.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/greenbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/group.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/method.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/package.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/redbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/report.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/session.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/source.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/FileManagerTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-FileManagerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-WordFetcherTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-WordManagerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/WordFetcherTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/WordManagerTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/FileManagerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/WordFetcherTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/WordManagerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/word-scraper-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,12 +103,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WordFetcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="255">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#254#255#0" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,68 +115,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/FileManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="466">
+              <caret line="103" selection-start-line="103" selection-end-line="103" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="n#!!block;n#setNewDirPath#0;n#FileManager#0" />
+                <element signature="method#checkFileExists#0;class#FileManager#0" />
                 <element signature="method#writeListToFile#0;class#FileManager#0" />
+                <element signature="method#writeMapToFile#0;class#FileManager#0" />
+                <element signature="method#readFromFile#0;class#FileManager#0" />
+                <element signature="method#moveFiles#0;class#FileManager#0" />
+                <element signature="method#makeDirectory#0;class#FileManager#0" />
                 <element signature="method#timeStamper#0;class#FileManager#0" />
+                <element signature="method#removeIllegalDirChars#0;class#FileManager#0" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="50" column="17" lean-forward="true" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/site/jacoco/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+        <entry file="file://$PROJECT_DIR$/src/test/java/WordFetcherTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/io/BufferedReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="388" selection-start-line="388" selection-end-line="388" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Driver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="85" column="82" selection-start-line="85" selection-start-column="82" selection-end-line="85" selection-end-column="82" />
+            <state relative-caret-position="408">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2000#2113#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exclusions.txt">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PageContentCleaner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="136" selection-start-line="136" selection-end-line="136" />
+            <state relative-caret-position="391">
+              <caret line="23" column="57" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,25 +160,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WordManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="586">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
               <folding>
-                <element signature="e#361#362#0" expanded="true" />
-                <element signature="e#405#406#0" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
-                <element signature="e#602#603#0" expanded="true" />
-                <element signature="e#635#636#0" expanded="true" />
+                <element signature="e#869#870#0" expanded="true" />
+                <element signature="e#900#901#0" expanded="true" />
                 <element signature="n#!!block;n#appendExclusions#0;n#WordManager#0" />
                 <element signature="n#!!block;n#appendInclusions#0;n#WordManager#0" />
                 <element signature="method#stringToList#0;class#WordManager#0" />
-                <element signature="method#removeFourLetterWords#0;class#WordManager#0" />
                 <element signature="method#removeExclusionWords#0;class#WordManager#0" />
-                <element signature="e#1524#1642#1" />
-                <element signature="e#1655#1731#1" />
                 <element signature="method#wordFrequency#0;class#WordManager#0" />
-                <element signature="e#1832#2156#1" />
-                <element signature="e#1932#2113#1" />
-                <element signature="method#sortMapDescending#0;class#WordManager#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/WordScraperApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+              <folding>
+                <element signature="method#setList#0;class#Driver#0" />
+                <element signature="method#cleanWebPageContent#0;class#Driver#0" />
+                <element signature="method#wordFrequency#0;class#WordScraperApplication#0" />
+                <element signature="method#fileWriter#0;class#WordScraperApplication#0" />
               </folding>
             </state>
           </provider>
@@ -150,6 +214,7 @@
     <findStrings>
       <find>after</find>
       <find>Brazil</find>
+      <find>Iran</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\jquinn\code-projects</dir>
@@ -166,7 +231,6 @@
         <option value="$PROJECT_DIR$/test/com/sidero/wordfetchertest/WordFetcherTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sidero/wordfetchertest/WordFetcherTestTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sidero/wordfetchertest/WordFetcherTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/UrlCleaner.java" />
         <option value="$PROJECT_DIR$/src/test/com/wordscraper/wordfetchertest/WordFetcherTest.java" />
         <option value="$PROJECT_DIR$/tests.txt" />
         <option value="$PROJECT_DIR$/src/test/WordManagerTest.java" />
@@ -179,19 +243,22 @@
         <option value="$PROJECT_DIR$/src/main/java/Word/Word.java" />
         <option value="$PROJECT_DIR$/src/main/java/Word/ExclusionWord.java" />
         <option value="$PROJECT_DIR$/src/main/java/Word/InclusionWord.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Word/WordManager2.java" />
         <option value="$PROJECT_DIR$/src/main/java/Word/ScrapedWord.java" />
         <option value="$PROJECT_DIR$/src/main/java/Words.java" />
-        <option value="$PROJECT_DIR$/src/main/java/WordFetcher.java" />
         <option value="$PROJECT_DIR$/src/test/java/WordManagerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/WordFetcherTest.java" />
-        <option value="$PROJECT_DIR$/SiteKeyWords.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/WordManager.java" />
-        <option value="$PROJECT_DIR$/exclusions.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/FileManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Driver.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/SiteKeyWords.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/Word/WordManager2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/UrlCleaner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/WordFetcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Driver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PageContentCleaner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/WordManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FileManager.java" />
+        <option value="$PROJECT_DIR$/exclusions.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/WordScraperApplication.java" />
         <option value="$PROJECT_DIR$/Jenkinsfile" />
+        <option value="$PROJECT_DIR$/src/test/java/WordFetcherTest.java" />
       </list>
     </option>
   </component>
@@ -202,10 +269,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="2873" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1129" />
+    <option name="height" value="960" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -235,20 +303,9 @@
             <path>
               <item name="wordscraper" type="b2602c69:ProjectViewProjectNode" />
               <item name="Word Scraper - Java" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wordscraper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Word Scraper - Java" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wordscraper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Word Scraper - Java" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="jacoco" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -265,6 +322,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
+    <property name="extract.method.default.visibility" value="public" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/sidero/wordfetchertest" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Exercise2/Inventory_Sweeper - Python/system_inventory_sweep/system_info_collector" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -280,19 +338,19 @@
       <recent name="" />
       <recent name="com.sidero.wordfetchertest" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jquinn\IdeaProjects\Exercise1\Word Scraper - Java\src\test\java" />
-      <recent name="C:\Users\jquinn\IdeaProjects\Exercise1\Word Scraper - Java\src\main" />
-      <recent name="C:\Users\jquinn\IdeaProjects\Exercise1\Word Scraper - Java\src\test" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Word" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jquinn\IdeaProjects\Exercise1\Word Scraper - Java\src\main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Word" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jquinn\IdeaProjects\Exercise1\Word Scraper - Java\src\test\java" />
+      <recent name="C:\Users\jquinn\IdeaProjects\Exercise1\Word Scraper - Java\src\main" />
+      <recent name="C:\Users\jquinn\IdeaProjects\Exercise1\Word Scraper - Java\src\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -307,10 +365,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Driver">
-    <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Driver" />
+  <component name="RunManager" selected="JUnit.All in code-projects">
+    <configuration name="WordScraperApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WordScraperApplication" />
       <module name="Word Scraper - Java" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;https://www.rte.ie/news/2019/0718/1063666-lisa-smith/&quot;" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -380,7 +439,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Driver" />
+      <item itemvalue="Application.WordScraperApplication" />
       <item itemvalue="JUnit.WordFetcherTest" />
       <item itemvalue="JUnit.All in code-projects" />
       <item itemvalue="JUnit.FileManagerTest" />
@@ -389,10 +448,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Driver" />
+        <item itemvalue="JUnit.All in code-projects" />
+        <item itemvalue="Application.WordScraperApplication" />
         <item itemvalue="JUnit.FileManagerTest.checkFileDoesExistTest" />
         <item itemvalue="Python tests.Unittests in test" />
-        <item itemvalue="JUnit.All in code-projects" />
         <item itemvalue="JUnit.FileManagerTest" />
       </list>
     </recent_temporary>
@@ -417,13 +476,11 @@
       <workItem from="1563348925512" duration="596000" />
       <workItem from="1563359674995" duration="15209000" />
       <workItem from="1563436370408" duration="13165000" />
+      <workItem from="1563525173134" duration="12820000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FileManagerTest_checkFileDoesExistTest - 2019.07.18 at 09h 04m 06s.xml">
-      <configuration name="FileManagerTest.checkFileDoesExistTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FileManagerTest_checkFileDoesExistTest - 2019.07.18 at 09h 04m 18s.xml">
       <configuration name="FileManagerTest.checkFileDoesExistTest" configurationId="JUnit" />
     </history-entry>
@@ -451,12 +508,15 @@
     <history-entry file="WordFetcherTest - 2019.07.18 at 10h 14m 58s.xml">
       <configuration name="WordFetcherTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_code-projects - 2019.07.19 at 13h 43m 52s.xml">
+      <configuration name="All in code-projects" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94762000" />
+    <option name="totallyTimeSpent" value="108184000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2873" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -465,20 +525,20 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Learn" order="4" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" weight="0.25164112" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.30087528" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.13859275" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.4989339" visible="true" weight="0.25893825" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.32827735" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5010661" side_tool="true" weight="0.25893825" />
+      <window_info anchor="bottom" id="Messages" order="3" sideWeight="0.49946696" weight="0.32827735" />
       <window_info anchor="bottom" id="Database Changes" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.18201517" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49946696" weight="0.39761648" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Structure" order="11" sideWeight="0.49946696" weight="0.24918744" />
+      <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="right" id="Maven" order="0" />
       <window_info anchor="right" id="Palette" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
@@ -491,7 +551,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
       <window_info anchor="right" id="Debug" order="10" sideWeight="0.49537036" weight="0.42997813" />
       <window_info anchor="right" id="JSON Viewer" order="11" />
-      <window_info anchor="right" id="Coverage" order="12" sideWeight="0.5046296" side_tool="true" weight="0.20948827" />
+      <window_info anchor="right" id="Coverage" order="12" sideWeight="0.5046296" side_tool="true" visible="true" weight="0.20948827" />
     </layout>
     <layout-to-restore>
       <window_info id="Image Layers" order="0" />
@@ -536,41 +596,45 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
-          <line>9</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/WordManager.java</url>
-          <line>65</line>
+          <line>72</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Driver.java</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/FileManager.java</url>
-          <line>36</line>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/PageContentCleaner.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/PageContentCleaner.java</url>
+          <line>15</line>
+          <properties class="PageContentCleaner" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/WordFetcher.java</url>
+          <line>11</line>
+          <properties class="WordFetcher" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/wordscraper$WordManagerTest_appendInclusionsTest.ic" NAME="WordManagerTest.appendInclusionsTest Coverage Results" MODIFIED="1563203425905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/wordscraper$All_in_code_projects.ic" NAME="All in code-projects Coverage Results" MODIFIED="1563206016156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/wordscraper$All_in_code_projects.ic" NAME="All in code-projects Coverage Results" MODIFIED="1563540201596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/wordscraper$Driver.ic" NAME="Driver Coverage Results" MODIFIED="1563375112065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/wordscraper$WordManagerTest_appendExclusionsTest.ic" NAME="WordManagerTest.appendExclusionsTest Coverage Results" MODIFIED="1563203612905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/wordscraper$FileManagerTest.ic" NAME="FileManagerTest Coverage Results" MODIFIED="1563266668305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -581,68 +645,6 @@
     <SUITE FILE_PATH="coverage/wordscraper$WordManagerTest_removeFourLetterWordsTest.ic" NAME="WordManagerTest.removeFourLetterWordsTest Coverage Results" MODIFIED="1563266461247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.4.2/junit-platform-engine-1.4.2.jar!/org/junit/platform/engine/support/hierarchical/ThrowableCollector.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.4.2/junit-platform-engine-1.4.2.jar!/org/junit/platform/engine/support/hierarchical/NodeTestTask.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="122" selection-start-line="122" selection-end-line="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.4.2/junit-jupiter-engine-5.4.2.jar!/org/junit/jupiter/engine/descriptor/TestMethodTestDescriptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.4.2/junit-jupiter-engine-5.4.2.jar!/org/junit/jupiter/engine/execution/ExecutableInvoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.0/junit-jupiter-api-5.5.0-sources.jar!/org/junit/jupiter/api/Assertions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="209" selection-start-line="209" selection-end-line="209" />
-          <folding>
-            <element signature="e#6981#6982#0" expanded="true" />
-            <element signature="e#7029#7030#0" expanded="true" />
-            <element signature="e#7669#7670#0" expanded="true" />
-            <element signature="e#7879#7880#0" expanded="true" />
-            <element signature="e#7929#7930#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.0/junit-platform-commons-1.5.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="946" selection-start-line="946" selection-end-line="946" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="622" selection-start-line="622" selection-end-line="622" />
-          <folding>
-            <element signature="e#22821#22822#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/test-classes/WordFetcherTest.class" />
-    <entry file="file://$PROJECT_DIR$/target/test-classes/WordManagerTest.class" />
-    <entry file="file://$PROJECT_DIR$/target/classes/anotherTempFile.txt" />
     <entry file="file://$PROJECT_DIR$/target/classes/existsFile.txt" />
     <entry file="file://$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst">
       <provider selected="true" editor-type-id="text-editor" />
@@ -717,86 +719,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/https_docs_oracle_com_javase_8_docs_api_java_util_Collection_html_removeIf_java_util_function_Predicate_2019-41-17.13.41.50-word-scrape.txt" />
     <entry file="file://$PROJECT_DIR$/https_docs_oracle_com_javase_8_docs_api_java_util_Collection_html_removeIf_java_util_function_Predicate_2019-24-17.14.24.47-word-scrape.txt" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/FileManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UrlCleaner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AllWords.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ListCreation.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Words.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Word/Word.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#115#116#0" expanded="true" />
-            <element signature="e#141#142#0" expanded="true" />
-            <element signature="e#168#169#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Word/ScrapedWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding>
-            <element signature="e#80#81#0" expanded="true" />
-            <element signature="e#103#104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Word/InclusionWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding>
-            <element signature="e#109#110#0" expanded="true" />
-            <element signature="e#132#133#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Word/ExclusionWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding>
-            <element signature="e#108#109#0" expanded="true" />
-            <element signature="e#131#132#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Word/WordManager2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/jre/lib/rt.jar!/sun/nio/fs/WindowsFileSystem.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -808,16 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/WordFetcherTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -880,32 +795,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/https_www_geeksforgeeks_org_count_occurrences_elements_list_java_2019-56-18.11.56.38-word-scrape.txt" />
-    <entry file="file://$PROJECT_DIR$/SiteKeyWords.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2652">
-          <caret line="156" column="6" selection-start-line="156" selection-end-line="156" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WordFetcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exclusions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/io/BufferedReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -913,69 +802,222 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/target/site/jacoco/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Word/Word.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Word/InclusionWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Word/ExclusionWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Word/ScrapedWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Word/WordManager2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="method#WordManager2#0;class#WordManager2#0" />
+            <element signature="method#stringToList#0;class#WordManager2#0" />
+            <element signature="method#removeFourLetterWords#0;class#WordManager2#0" />
+            <element signature="method#removeWords#0;class#WordManager2#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/https_www_rte_ie_news_2019_0718_1063666_lisa_smith_2019-03-19.10.3.23-word-scrape.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6852" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/https_www_rte_ie_news_2019_0718_1063666_lisa_smith_2019-10-19.10.10.52-word-scrape.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="117" column="2" selection-start-line="117" selection-start-column="2" selection-end-line="117" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SiteKeyWords.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="8" selection-start-line="9" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/FileManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="34" column="61" lean-forward="true" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WordFetcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/https_www_rte_ie_news_2019_0718_1063666_lisa_smith_2019-06-19.13.6.36-ALL_WORDS.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/https_www_rte_ie_news_2019_0718_1063666_lisa_smith_2019-06-19.13.6.36-KEY_WORDS.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" selection-start-line="1" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/https_www_rte_ie_news_2019_0718_1063666_lisa_smith_2019-08-19.13.8.5-KEY_WORDS.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="4" selection-start-line="2" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/https_www_rte_ie_news_2019_0718_1063666_lisa_smith_2019-20-19.13.20.53-KEY_WORDS.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/https_www_rte_ie_news_2019_0718_1063666_lisa_smith_2019-23-19.13.23.40-KEY_WORDS.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/https_www_rte_ie_news_2019_0718_1063666_lisa_smith_2019-24-19.13.24.3-KEY_WORDS.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exclusions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18616">
+          <caret line="6" column="2" lean-forward="true" selection-end-line="137" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/WordScraperApplication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#2961#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/https_www_rte_ie_news_2019_0718_1063666_lisa_smith_2019-27-19.13.27.28-KEY_WORDS.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WordScraperApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+          <folding>
+            <element signature="method#setList#0;class#Driver#0" />
+            <element signature="method#cleanWebPageContent#0;class#Driver#0" />
+            <element signature="method#wordFrequency#0;class#WordScraperApplication#0" />
+            <element signature="method#fileWriter#0;class#WordScraperApplication#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WordManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="586">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
           <folding>
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#869#870#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
             <element signature="n#!!block;n#appendExclusions#0;n#WordManager#0" />
             <element signature="n#!!block;n#appendInclusions#0;n#WordManager#0" />
             <element signature="method#stringToList#0;class#WordManager#0" />
-            <element signature="method#removeFourLetterWords#0;class#WordManager#0" />
             <element signature="method#removeExclusionWords#0;class#WordManager#0" />
-            <element signature="e#1524#1642#1" />
-            <element signature="e#1655#1731#1" />
             <element signature="method#wordFrequency#0;class#WordManager#0" />
-            <element signature="e#1832#2156#1" />
-            <element signature="e#1932#2113#1" />
-            <element signature="method#sortMapDescending#0;class#WordManager#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Driver.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageContentCleaner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="85" column="82" selection-start-line="85" selection-start-column="82" selection-end-line="85" selection-end-column="82" />
+        <state relative-caret-position="391">
+          <caret line="23" column="57" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2000#2113#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FileManager.java">
+    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="n#!!block;n#setNewDirPath#0;n#FileManager#0" />
-            <element signature="method#writeListToFile#0;class#FileManager#0" />
-            <element signature="method#timeStamper#0;class#FileManager#0" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="50" column="17" lean-forward="true" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+        <state relative-caret-position="203">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/site/jacoco/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+    <entry file="file://$PROJECT_DIR$/src/main/java/FileManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="466">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="n#!!block;n#setNewDirPath#0;n#FileManager#0" />
+            <element signature="method#checkFileExists#0;class#FileManager#0" />
+            <element signature="method#writeListToFile#0;class#FileManager#0" />
+            <element signature="method#writeMapToFile#0;class#FileManager#0" />
+            <element signature="method#readFromFile#0;class#FileManager#0" />
+            <element signature="method#moveFiles#0;class#FileManager#0" />
+            <element signature="method#makeDirectory#0;class#FileManager#0" />
+            <element signature="method#timeStamper#0;class#FileManager#0" />
+            <element signature="method#removeIllegalDirChars#0;class#FileManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/WordFetcherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -13,29 +13,17 @@ class WordFetcherTest {
 
     @BeforeEach
     void setUp() throws Exception {
-        URL testUrl = new URL(stringUrl);
-        wordFetcher.setUrl(testUrl);
+
     }
 
-    @Test
-    void urlNotNullTest() throws Exception  {
-        URL url = wordFetcher.getUrl();
-        assertNotNull(url);
-    }
 
     @Test
-    void checkStringIsConvertedToURLTest() throws Exception {
-        URL url = new URL(stringUrl);
-        assertNotNull(url, "The Object Should not be null and should contain a url");
-    }
-
-    @Test
-    void wordFetchReturnsAStringTest(){
-        String webContents = wordFetcher.wordFetch(wordFetcher.getUrl());
+    void wordFetchReturnsAStringTest() throws  Exception {
+        String webContents = wordFetcher.wordFetch(new URL(stringUrl));
         assertNotNull(webContents, "The Object should contain a string of all of a URL's contents");
     }
 
-    @AfterEach
+    @AfterAll
     void tearDown(){
         wordFetcher = null;
         assertNull(wordFetcher);
