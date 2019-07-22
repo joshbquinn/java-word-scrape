@@ -11,13 +11,14 @@ public class WordScraperApplication {
         WordFetcher wordFetcher = new WordFetcher();
         PageContentCleaner contentCleaner = new PageContentCleaner();
         FileManager fileManager = new FileManager();
+        String url = args[0];
 
         setList(wordManager, wordFetcher, fileManager, "exclusions.txt","https://raw.githubusercontent.com/joshbquinn/englishwords/master/commonwords.txt");
         setList(wordManager, wordFetcher, fileManager, "verbs.txt","https://www.scrapmaker.com/data/wordlists/language/Verbs(4,874).txt");
 
-        cleanWebPageContent(contentCleaner, wordFetcher, args[0], wordManager);
+        cleanWebPageContent(contentCleaner, wordFetcher, url, wordManager);
         checkWordFrequency(wordManager);
-        fileWriter(wordManager, fileManager, args[0]);
+        fileWriter(wordManager, fileManager, url);
 
 
     }

@@ -8,7 +8,6 @@ node {
             sh 'mvn clean verify'
         }
 
-
         stage('Archival') {
             publishHTML(target: [allowMissing         : true,
                                  alwaysLinkToLastBuild: false,
@@ -17,9 +16,10 @@ node {
                                  reportFiles          : 'index.html',
                                  reportName           : 'Code Coverage',
                                  reportTitles         : ''])
-            archiveArtifacts allowEmptyArchive: true, artifacts: '*.txt'
             archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.jar'
         }
+
+
 
     } catch (err){
         notify("Error ${err}")
