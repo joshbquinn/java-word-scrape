@@ -8,21 +8,11 @@ node {
             stage('Compile') {
                 bat 'mvn clean compile'
             }
-
-            stage('Unit Tests') {
-                parallel Linux: {
-                    node('ubuntu') {
-                        sh 'mvn test'
-                    }
-                }, Windows: {
-                    node('windows') {
-                        bat 'mvn test'
-                    }
-                }
+            //
+            stage('Test'){
+                bat 'mvn test'
             }
-            if (!err){
-                notify('Tests Passed')
-            }
+            //
 
             stage('Package'){
                 bat 'mvn package'
