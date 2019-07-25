@@ -12,7 +12,6 @@ public class WordManager2 {
 
     }
 
-
     public List<String> removeDuplicateWords(List<String> webPageWords){
         return null;
     }
@@ -38,7 +37,5 @@ public class WordManager2 {
         }
 
     }
-
-
 
 }

@@ -1,29 +1,50 @@
 node {
-    try {
-        stage('Git Checkout') {
-            checkout scm
+    node('windows') {
+        try {
+            stage('Checkout') {
+                checkout scm
+            }
+
+            stage('Compile') {
+                bat 'mvn clean compile'
+            }
+
+            stage('Unit Tests') {
+                parallel Linux: {
+                    node('ubuntu') {
+                        sh 'mvn test'
+                    }
+                }, Windows: {
+                    node('windows') {
+                        bat 'mvn test'
+                    }
+                }
+            }
+            if (!err){
+                notify('Tests Passed')
+            }
+
+            stage('Package'){
+                bat 'mvn package'
+            }
+
+
+            stage('Archive') {
+                publishHTML(target: [allowMissing         : true,
+                                     alwaysLinkToLastBuild: false,
+                                     keepAll              : true,
+                                     reportDir            : 'target/site/jacoco',
+                                     reportFiles          : 'index.html',
+                                     reportName           : 'Code Coverage',
+                                     reportTitles         : ''])
+                archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.jar'
+            }
+
+
+        } catch (err) {
+            notify("Error ${err}")
+            currentBuild.result = 'Failure'
         }
-
-        stage('Build - Compile, Test, Package') {
-            sh 'mvn clean verify'
-        }
-
-        stage('Archival') {
-            publishHTML(target: [allowMissing         : true,
-                                 alwaysLinkToLastBuild: false,
-                                 keepAll              : true,
-                                 reportDir            : 'target/site/jacoco',
-                                 reportFiles          : 'index.html',
-                                 reportName           : 'Code Coverage',
-                                 reportTitles         : ''])
-            archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.jar'
-        }
-
-
-
-    } catch (err){
-        notify("Error ${err}")
-        currentBuild.result = 'Failure'
     }
 }
 
