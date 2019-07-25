@@ -6,13 +6,25 @@ node {
             }
 
             stage('Compile') {
-                bat 'mvn clean compile'
+                bat 'mvn clean compile -DskipTests'
             }
-            //
-            stage('Test'){
-                bat 'mvn test'
+
+            stage('Test') {
+                parallel 'linux': {
+                    stage('Linux') {
+                        node('ubuntu'){
+                            sh 'mvn test'
+                        }
+                    }
+                }, 'windows': {
+                    stage('Windows') {
+                        node('windows'){
+                            bat 'mvn test'
+                        }
+                    }
+                }
             }
-            //
+
 
             stage('Package'){
                 bat 'mvn package'
