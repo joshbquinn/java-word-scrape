@@ -45,7 +45,6 @@ node {
                                      reportName           : 'Code Coverage',
                                      reportTitles         : ''])
                 archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.jar'
-                testResults 'target/surefire-reports/TEST-*.xml'
             }
 
             stage('Run'){
