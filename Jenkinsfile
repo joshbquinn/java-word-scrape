@@ -27,7 +27,9 @@ node {
                     }
                 }
             }*/
-
+            stage('Unit Tests'){
+                bat 'mvn test'
+            }
 
             stage('Package'){
                 bat 'mvn package'
