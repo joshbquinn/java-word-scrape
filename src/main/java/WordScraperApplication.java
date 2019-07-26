@@ -16,11 +16,20 @@ public class WordScraperApplication {
         setList(wordManager, wordFetcher, fileManager, "exclusions.txt","https://raw.githubusercontent.com/joshbquinn/englishwords/master/commonwords.txt");
         setList(wordManager, wordFetcher, fileManager, "verbs.txt","https://www.scrapmaker.com/data/wordlists/language/Verbs(4,874).txt");
 
-        cleanWebPageContent(contentCleaner, wordFetcher, url, wordManager);
-        checkWordFrequency(wordManager);
-        fileWriter(wordManager, fileManager, url);
+        try {
+            if (args[0] == null) {
+                System.out.println("No URL passed");
 
-
+            } else if (!args[0].getClass().equals(String.class)) {
+                System.out.println("Must enclose URL within double quotes");
+            } else {
+                cleanWebPageContent(contentCleaner, wordFetcher, url, wordManager);
+                checkWordFrequency(wordManager);
+                fileWriter(wordManager, fileManager, url);
+            }
+        }catch (MalformedURLException e ){
+            e.printStackTrace();
+        }
     }
 
     private static void setList(WordManager wordManager, WordFetcher wordFetcher, FileManager fileManager, String fileName, String url) throws MalformedURLException {

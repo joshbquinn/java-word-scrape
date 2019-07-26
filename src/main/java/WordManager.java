@@ -37,14 +37,12 @@ public class WordManager {
         return keywords;
     }
 
-
     public void appendExclusions(List<String> moreExclusions){
         this.exclusions.addAll(moreExclusions);
     }
     public void appendInclusions(List<String> moreInclusions){
         this.verbs.addAll(moreInclusions);
     }
-
 
 
     public List<String> stringToList(String webPageContents) {
@@ -73,9 +71,7 @@ public class WordManager {
             Map<String, Integer> frequencyMap = new HashMap<>();
             for (String s : words) {
                 if (!frequencyMap.containsKey(s)) {
-/*                Integer count = frequencyMap.get(s);
-                if(count == null)
-                    count = 0;*/
+
                     frequencyMap.put(s, 1);
                 } else {
 
