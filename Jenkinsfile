@@ -1,56 +1,63 @@
 node {
     node('windows') {
         try {
-            stage('Checkout') {
-                checkout scm
-            }
+            stage('Checkout')
+                    {
+                        checkout scm
+                    }
 
-            stage('Compile') {
-                bat 'mvn clean compile -DskipTests'
-            }
+            stage('Compile')
+                    {
+                        bat 'mvn clean compile -DskipTests'
+                    }
 
-            stage('Test') {
-                parallel 'linux': {
-                    stage('Linux') {
-                        node('ubuntu'){
-                            sh 'mvn test'
+            stage('Test')
+                    {
+                        parallel 'linux': {
+                            stage('Linux') {
+                                node('ubuntu'){
+                                    sh 'mvn test'
+                                }
+                            }
+                        }, 'windows': {
+                            stage('Windows') {
+                                node('windows'){
+                                    bat 'mvn test'
+                                }
+                            }
                         }
                     }
-                }, 'windows': {
-                    stage('Windows') {
-                        node('windows'){
-                            bat 'mvn test'
-                        }
+
+
+            stage('Package')
+                    {
+                        bat 'mvn package'
                     }
-                }
-            }
 
 
-            stage('Package'){
-                bat 'mvn package'
-            }
+            stage('Archive')
+                    {
+                        publishHTML(target: [allowMissing         : true,
+                                             alwaysLinkToLastBuild: false,
+                                             keepAll              : true,
+                                             reportDir            : 'target/site/jacoco',
+                                             reportFiles          : 'index.html',
+                                             reportName           : 'Code Coverage',
+                                             reportTitles         : ''])
+                        archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.jar'
+                    }
 
 
-            stage('Archive') {
-                publishHTML(target: [allowMissing         : true,
-                                     alwaysLinkToLastBuild: false,
-                                     keepAll              : true,
-                                     reportDir            : 'target/site/jacoco',
-                                     reportFiles          : 'index.html',
-                                     reportName           : 'Code Coverage',
-                                     reportTitles         : ''])
-                archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.jar'
-            }
-
-
-        } catch (err) {
+        } catch (err)
+        {
             notify("Error ${err}")
             currentBuild.result = 'Failure'
         }
     }
 }
 
-def notify(status){
+def notify(status)
+{
     emailext(
             to: "jbqjenkins@gmail.com",
             subject: "${status}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
