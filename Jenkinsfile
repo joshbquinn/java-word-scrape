@@ -32,7 +32,7 @@ node {
             }
 
             stage('Package'){
-                bat 'mvn package'
+                bat 'mvn package -DskipTests'
             }
 
 
@@ -45,7 +45,7 @@ node {
                                      reportName           : 'Code Coverage',
                                      reportTitles         : ''])
                 archiveArtifacts allowEmptyArchive: true, artifacts: 'target/*.jar'
-                testResults: 'target/surefire-reports/TEST-*.xml'
+                testResults 'target/surefire-reports/TEST-*.xml'
             }
 
             stage('Run'){
