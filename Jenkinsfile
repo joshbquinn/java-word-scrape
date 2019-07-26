@@ -7,9 +7,12 @@ node {
 
             stage('Compile') {
                 bat 'mvn clean compile -DskipTests'
+
+                // Here I need to stash the pulled code
             }
 
-            stage('Test') {
+            // Then I can unstash the pulled code within each node test block
+          /*  stage('Test') {
                 parallel 'linux': {
                     stage('Linux') {
                         node('ubuntu'){
@@ -23,7 +26,7 @@ node {
                         }
                     }
                 }
-            }
+            }*/
 
 
             stage('Package'){
