@@ -50,7 +50,7 @@ public class FileManager  {
     }
 
     public synchronized void writeMapToFile(LinkedHashMap<String, Integer> frequencyMap, String file) throws Exception{
-        String path = FileManager.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+
         Path out = Paths.get(file);
         Files.write(out, () -> frequencyMap.entrySet().stream()
                 .<CharSequence>map(e -> e.getKey() + " : "+  e.getValue() + " Occurrences")
@@ -99,9 +99,9 @@ public class FileManager  {
         return format.format(new Date());
     }
 
-    public String removeIllegalDirChars(String urlString){
-        urlString = Pattern.compile("[^A-Za-z0-9]+").matcher(urlString).replaceAll(" ");
-        return urlString;
+    public String removeIllegalFileChars(String fileName){
+        fileName = Pattern.compile("[^A-Za-z0-9]+").matcher(fileName).replaceAll(" ");
+        return fileName;
     }
 
 }

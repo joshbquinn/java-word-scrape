@@ -13,7 +13,7 @@ public class WordFetcher {
 
     }
 
-    public synchronized String wordFetch(URL url) {
+    public String wordFetch(URL url) {
 
          try {
             BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));

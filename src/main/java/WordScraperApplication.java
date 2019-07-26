@@ -53,8 +53,8 @@ public class WordScraperApplication {
 
         String allPageContents = fetch.wordFetch(new URL(url));
         String paragraphContent = cleaner.keepParagraphContent(allPageContents);
-        String clean = cleaner.removeUnwantedHTML(paragraphContent);
-        wordManager.removeExclusionWords(wordManager.removeFourLetterWords(wordManager.stringToList(clean)));
+        String cleanContent = cleaner.removeUnwantedHTML(paragraphContent);
+        wordManager.removeExclusionWords(wordManager.removeFourLetterWords(wordManager.stringToList(cleanContent)));
     }
 
     private static void checkWordFrequency(WordManager wordManager){
@@ -64,7 +64,7 @@ public class WordScraperApplication {
 
     private static void fileWriter(WordManager wM, FileManager fM, String url) throws Exception {
 
-        String cleanURL =  fM.removeIllegalDirChars(url).replace(" ", "_") + fM.timeStamper(); // Remove illegal characters from the URL string so it can be legally saved as a file name.
+        String cleanURL =  fM.removeIllegalFileChars(url).replace(" ", "_") + fM.timeStamper(); // Remove illegal characters from the URL string so it can be legally saved as a file name.
         fM.writeListToFile(wM.getScraped(), cleanURL + "-ALL_WORDS.txt");  // Write the list to a file and save file with a unique name (cleaned URL string + time stamp)
         fM.writeMapToFile(wM.getKeywords(), cleanURL + "-KEY_WORDS.txt");
 
