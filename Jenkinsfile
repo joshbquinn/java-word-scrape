@@ -1,8 +1,20 @@
 node {
     node('windows') {
         try {
+
+
             stage('Checkout') {
                 checkout scm
+            }
+
+
+            stange('Sonar Analysis'){
+                def scannerhome = tool 'SonarScanner4';
+
+                withSonarQubeEnv('sonar'){
+
+                    sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.6.0.1398:sonar'
+                }
             }
 
             stage('Compile') {
@@ -10,6 +22,8 @@ node {
 
                 // Here I need to stash the pulled code
             }
+
+
 
             // Then I can unstash the pulled code within each node test block
           /*  stage('Test') {
