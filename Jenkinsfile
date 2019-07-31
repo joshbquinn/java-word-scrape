@@ -8,7 +8,7 @@ node {
             }
 
 
-            stange('Sonar Analysis'){
+            stage('Sonar Analysis'){
                 def scannerhome = tool 'SonarScanner4';
 
                 withSonarQubeEnv('sonar'){
