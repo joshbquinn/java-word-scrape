@@ -9,12 +9,7 @@ node {
 
 
             stage('Sonar Analysis'){
-                def scannerhome = tool 'SonarScanner4';
-
-                withSonarQubeEnv('sonar'){
-
-                    sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.6.0.1398:sonar'
-                }
+                    bat 'mvn sonar:sonar'
             }
 
             stage('Compile') {
