@@ -1,6 +1,0 @@
-projectKey=wordscraper:project
-serverUrl=http://172.17.211.137
-serverVersion=7.9.1.27448
-dashboardUrl=http://172.17.211.137/dashboard?id=wordscraper%3Aproject
-ceTaskId=AWxxH_3epk_1G9T5BUxK
-ceTaskUrl=http://172.17.211.137/api/ce/task?id=AWxxH_3epk_1G9T5BUxK
