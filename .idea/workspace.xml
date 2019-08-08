@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e2654ea-02a1-4ce7-9928-181e4bdcd825" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sonar-project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sonar-project.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sonar-project.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            <state relative-caret-position="364">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -122,11 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="10" />
+            <state relative-caret-position="799">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -184,7 +183,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Driver.java" />
         <option value="$PROJECT_DIR$/exclusions.txt" />
         <option value="$PROJECT_DIR$/src/test/java/WordFetcherTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Word/WordManager2.java" />
         <option value="$PROJECT_DIR$/README.txt" />
         <option value="$PROJECT_DIR$/src/main/java/WordManager.java" />
@@ -196,6 +194,7 @@
         <option value="$PROJECT_DIR$/src/main/java/WordFetcher.java" />
         <option value="$PROJECT_DIR$/Jenkinsfile" />
         <option value="$PROJECT_DIR$/sonar-project.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -226,11 +225,6 @@
             <path>
               <item name="wordscraper" type="b2602c69:ProjectViewProjectNode" />
               <item name="Word Scraper - Java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wordscraper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Word Scraper - Java" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -414,7 +408,7 @@
       <workItem from="1564647007192" duration="27000" />
       <workItem from="1564647072433" duration="624000" />
       <workItem from="1565251838835" duration="6060000" />
-      <workItem from="1565265528578" duration="3488000" />
+      <workItem from="1565265528578" duration="4063000" />
     </task>
     <servers />
   </component>
@@ -451,11 +445,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146943000" />
+    <option name="totallyTimeSpent" value="147518000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -463,8 +456,8 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Learn" order="4" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.19296375" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.4989339" visible="true" weight="0.5547129" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.19296375" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.4989339" visible="true" weight="0.3575298" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5010661" side_tool="true" weight="0.25893825" />
       <window_info anchor="bottom" id="Messages" order="3" sideWeight="0.49946696" weight="0.32827735" />
@@ -713,13 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FileManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
@@ -764,8 +750,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sonar-project.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        <state relative-caret-position="364">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
