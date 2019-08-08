@@ -7,9 +7,8 @@ node('windows') {
 
 
         stage('SonarQube Analysis'){
-            def scannerHome = tool 'SonarScanner';
             withSonarQubeEnv('SonarServer') {
-                bat '${scannerHome}/bin/sonar-scanner'
+                bat 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.6.0.1398:sonar'
             }
         }
 
