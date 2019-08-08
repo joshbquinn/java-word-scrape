@@ -36,10 +36,7 @@ node {
             }
 
             stage('SonarQube Analysis') {
-                def sonarScanner = tool 'SonarScanner'
-                withSonarQubeEnv('SonarServer') {
-                    bat '${sonarScanner}\\bin\\sonar-scanner'
-                }
+                bat 'sonar-scanner'
             }
 
             stage('Package') {

@@ -410,7 +410,7 @@
       <workItem from="1564647007192" duration="27000" />
       <workItem from="1564647072433" duration="624000" />
       <workItem from="1565251838835" duration="6060000" />
-      <workItem from="1565265528578" duration="1052000" />
+      <workItem from="1565265528578" duration="1295000" />
     </task>
     <servers />
   </component>
@@ -447,11 +447,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144507000" />
+    <option name="totallyTimeSpent" value="144750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -459,8 +458,8 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Learn" order="4" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.19296375" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.4989339" visible="true" weight="0.5547129" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.19296375" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.4989339" visible="true" weight="0.5547129" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5010661" side_tool="true" weight="0.25893825" />
       <window_info anchor="bottom" id="Messages" order="3" sideWeight="0.49946696" weight="0.32827735" />
