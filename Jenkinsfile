@@ -6,18 +6,12 @@ node('windows') {
         }
 
 
-        stage('SonarQube Analysis'){
-            withSonarQubeEnv('SonarServer') {
-                bat 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.6.0.1398:sonar'
-            }
-        }
 
         stage('Compile') {
             bat 'mvn clean compile -DskipTests'
 
             // Here I need to stash the pulled code
         }
-
 
 
         // Then I can unstash the pulled code within each node test block
@@ -39,6 +33,13 @@ node('windows') {
 
         stage('Unit Tests'){
             bat 'mvn test'
+        }
+
+        stage('SonarQube Analysis'){
+            def sonarScanner = tool 'SonarScanner'
+            withSonarQubeEnv('SonarServer') {
+                bat '${sonarScanner}\\bin\\sonar-scanner'
+            }
         }
 
         stage('Package'){
