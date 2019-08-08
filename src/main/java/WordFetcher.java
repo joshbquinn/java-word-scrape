@@ -1,5 +1,3 @@
-import sun.nio.cs.StandardCharsets;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -25,13 +23,13 @@ public class WordFetcher {
                 sb.append(inputLine + " ");
             }
 
-            in.close();
-
             return sb.toString().toLowerCase();
 
         } catch(IOException e){
             System.out.println("Error: " + e);
-        }
+        } finally {
+             in.close();
+         }
 
         return null;
     }
