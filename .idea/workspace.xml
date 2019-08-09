@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e2654ea-02a1-4ce7-9928-181e4bdcd825" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sonar-project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sonar-project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WordManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WordManagerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,25 +29,25 @@
             <entry file="file://$PROJECT_DIR$/sonar-project.properties">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="374">
-                  <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Jenkinsfile">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="646">
-                  <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+                  <caret line="23" selection-start-line="23" selection-end-line="23" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="340">
+                  <caret line="50" column="77" selection-start-line="50" selection-start-column="77" selection-end-line="50" selection-end-column="77" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pom.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="18" column="38" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="38" />
+                <state>
+                  <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -159,11 +154,11 @@
         <option value="$PROJECT_DIR$/src/main/java/WordScraperApplication.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/WordFetcher.java" />
-        <option value="$PROJECT_DIR$/Jenkinsfile" />
         <option value="$PROJECT_DIR$/pom1.xml" />
         <option value="$PROJECT_DIR$/src/test/java/WordManagerTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/sonar-project.properties" />
+        <option value="$PROJECT_DIR$/Jenkinsfile" />
       </list>
     </option>
   </component>
@@ -192,17 +187,6 @@
             <path>
               <item name="wordscraper" type="b2602c69:ProjectViewProjectNode" />
               <item name="Word Scraper - Java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wordscraper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Word Scraper - Java" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wordscraper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Word Scraper - Java" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="jacoco-report" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -387,7 +371,7 @@
       <workItem from="1564647072433" duration="624000" />
       <workItem from="1565251838835" duration="6060000" />
       <workItem from="1565265528578" duration="13475000" />
-      <workItem from="1565340306194" duration="9893000" />
+      <workItem from="1565340306194" duration="10156000" />
     </task>
     <servers />
   </component>
@@ -424,10 +408,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166823000" />
+    <option name="totallyTimeSpent" value="167086000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -706,27 +691,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/site/jacoco/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/sonar-project.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="38" />
+        <state relative-caret-position="374">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sonar-project.properties">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state>
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="50" column="77" selection-start-line="50" selection-start-column="77" selection-end-line="50" selection-end-column="77" />
         </state>
       </provider>
     </entry>

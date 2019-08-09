@@ -48,7 +48,7 @@ node('windows') {
             publishHTML(target: [allowMissing         : true,
                                  alwaysLinkToLastBuild: false,
                                  keepAll              : true,
-                                 reportDir            : 'target/site/jacoco',
+                                 reportDir            : 'target/jacoco-report/jacoco',
                                  reportFiles          : 'index.html',
                                  reportName           : 'Code Coverage',
                                  reportTitles         : ''])
