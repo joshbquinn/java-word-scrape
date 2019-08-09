@@ -56,7 +56,8 @@ node('windows') {
         }
 
         stage('Run') {
-            bat 'java -jar .\\target\\*.jar "https://www.rte.ie/sport/golf/2019/0723/1064814-lowry-cant-wait-to-show-great-granny-the-claret-jug/"'
+            def jar = 'target\\*.jar'
+            bat "java -jar .\\{jar} 'https://www.rte.ie/sport/golf/2019/0723/1064814-lowry-cant-wait-to-show-great-granny-the-claret-jug/'"
         }
 
         stage('Result') {
