@@ -36,7 +36,7 @@ node('windows') {
         }
 
         stage('SonarQube Analysis') {
-            bat 'mvn clean compile test; sonar-scanner'
+            bat 'mvn sonar:sonar'
         }
 
         stage('Package') {

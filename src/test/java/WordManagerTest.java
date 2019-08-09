@@ -41,7 +41,6 @@ class WordManagerTest {
 
     @Test
     void stringToList() {
-        // List<String> testList = new ArrayList<>(Arrays.asList("Check","this","string"));
         String testString = "Check this string";
         assertLinesMatch(wm.stringToList(testString), wm.getExclusions() , "Running : Testing that list matches another list made with stringToList() method.");
     }
