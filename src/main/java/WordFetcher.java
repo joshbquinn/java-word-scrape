@@ -29,7 +29,6 @@ public class WordFetcher {
 
         } catch (IOException e) {
             System.out.println("Error: " + e);
-
             return null;
         }
     }
