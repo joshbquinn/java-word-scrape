@@ -38,4 +38,29 @@ public class WordPlacement {
     public void setHey(String hey) {
         this.hey = hey;
     }
+
+
+    public String getNumbers1() {
+        return numbers;
+    }
+
+    public void setNumbers1(String numbers) {
+        this.numbers = numbers;
+    }
+
+    public int getPeople1() {
+        return people;
+    }
+
+    public void setPeople1(int people) {
+        this.people = people;
+    }
+
+    public String getHey1() {
+        return hey;
+    }
+
+    public void setHey1(String hey) {
+        this.hey = hey;
+    }
 }
