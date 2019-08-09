@@ -56,7 +56,7 @@ node('windows') {
         }
 
         stage('Run') {
-            bat 'java -jar .\\target\\word-scraper-1.0-SNAPSHOT.jar "https://www.rte.ie/sport/golf/2019/0723/1064814-lowry-cant-wait-to-show-great-granny-the-claret-jug/"'
+            bat 'java -jar .\\target\\*.jar "https://www.rte.ie/sport/golf/2019/0723/1064814-lowry-cant-wait-to-show-great-granny-the-claret-jug/"'
         }
 
         stage('Result') {
