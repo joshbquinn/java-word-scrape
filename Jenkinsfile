@@ -56,8 +56,7 @@ node('windows') {
         }
 
         stage('Run') {
-            def jar = '**\\target\\*.jar'
-            bat "java -jar ${jar} 'https://www.rte.ie/sport/golf/2019/0723/1064814-lowry-cant-wait-to-show-great-granny-the-claret-jug/'"
+            bat 'java -jar .\\target\\word-scraper-2.0-SNAPSHOT.jar "https://www.rte.ie/sport/golf/2019/0723/1064814-lowry-cant-wait-to-show-great-granny-the-claret-jug/"'
         }
 
         stage('Result') {
